@@ -8,6 +8,7 @@ private String accountHolderName;
 private double balance;
 
 
+//Cunstructer
 public Account(int accountNo, String accountHolderName, double balance) {
 
     this.accountNo = accountNo;
@@ -15,6 +16,7 @@ public Account(int accountNo, String accountHolderName, double balance) {
     this.balance = balance;
 }
 
+//Getters method
 public int getAccountNo(){
     return accountNo;
 }
@@ -30,6 +32,11 @@ public double getBalance(){
 public void addBalance(double amount){
     this.balance += amount;
 }
+
+public void deductBalance(double amount){
+    this.balance -= amount;
+}
+
 
 
 }
